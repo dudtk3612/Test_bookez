@@ -1,0 +1,136 @@
+@charset "EUC-KR";
+
+body {
+	margin: 0 auto;
+}
+
+.wrap {
+	width: 100%;
+	height: 100%;
+	
+}
+
+header {
+	width: 100%;
+	height: 100%;
+}
+
+header .logo {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	margin-top: 120px;
+	font-weight: bold;
+}
+
+header .logo a {
+	text-decoration: none;
+	color: #E3D4BF;
+}
+
+section {
+	width: 100%;
+	height: 100%;
+}
+
+section .signup {
+	position: relative;
+	width: 500px;
+	height: 580px;
+	margin-top: 40px;
+	left: 50%;
+	transform: translate(-50%);
+	border-radius: 10px;
+/* 	box-shadow: 0px 0px 8px 2px #E3D4BF; */
+	border: solid 2px #E3D4BF;
+}
+
+section .signup label:first-child {
+	margin-top: 15px;
+}
+
+section .signup label {
+	position: relative;
+	width: 80%;
+/* 	left: 10%; */
+	display: inline-block;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-weight: bold;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.addr-wrap {
+	
+}
+
+section .signup label.addr input {
+	position: relative;
+	border: none;
+	height: 20px;
+	line-height: 20px;
+	box-shadow: 0 0 6px 2px #E3D4BF;
+	border-radius: 6px;
+}
+
+.addr-wrap {
+	margin-top: 20px;
+	position: relative;
+	width: 100%;
+	left: 8%;
+}
+
+section .signup label:not(.addr) input {
+	border: none;
+	height: 20px;
+	line-height: 20px;
+	box-shadow: 0 0 6px 2px #E3D4BF;
+	border-radius: 6px;
+	position: absolute;
+	right: 4%;
+}
+
+section .signup .btn-wrap {
+	width: 100%;
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.btn-wrap button {
+	width: 100px;
+	height: 30px;
+	border: none;
+	border-radius: 10px;
+	background-color: #fff;
+	box-shadow: 0px 0px 4px -2px #E3D4BF;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+.btn-wrap button.success {
+	transition: 0.3s;
+	transform: scale(1);
+	background-color: #E3D4BF;
+}
+
+.btn-wrap button.success:hover {
+	background-color: green;
+	color: #fff;
+	transform: scale(1.1)
+}
+
+.btn-wrap button.cancel {
+	transition: 0.3s;
+	transform: scale(1);
+	background-color: #E3D4BF;
+}
+
+.btn-wrap button.cancel:hover {
+	background-color: red;
+	color: #fff;
+	transform: scale(1.1)
+}
